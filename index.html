@@ -4,24 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Casey Reynard</title>
-    <link rel="style-sheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="main-logo"></div>
+        <div class="main-logo">
+            <img src="asset/Logo-RevoU-5.png" href="index.html">
+        </div>
         <nav id="navbar">
-            <a href="#">Profile</a>
-            <a href="#">Portofolio</a>
-            <a href="#">Contact Me</a>
+            <a href="#profil">Profile</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#message">Contact Me</a>
         </nav>
     </header>
     <main>
-        <h1 id="introduction">Hi, my name is Brian Casey Reynard</h1>
-        <h4>Currently i'm a Computer Science 5th semester's student.</h4>
-
+        <section id="introduction">
+            <div class="introduction">
+                <h1 id="perkenalan"></h1>
+            </div>
+        </section>
+        <section>
+            <div class="profile">
+                <h3 id="profil">Profile</h3>
+                <table id="profile-table">
+                    <tr>
+                        <td>
+                            <h1>Nama</h1>
+                        </td>
+                        <td>
+                            <h3>Brian Casey Reynard</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>Pekerjaan</h1>
+                        </td>
+                        <td>
+                            <h3>Mahasiswa</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1>LinkedIn</h1>
+                        </td>
+                        <td>
+                            <a href="https://www.linkedin.com/in/brian-casey-reynard/" target="_blank" title="My LinkedIn">Brian Casey Reynard</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="portofolio">
+                <h3 id="portofolio">Portofolio</h3>
+                <p>
+                    <a href="https://github.com/bcrey-022" target="_blank" title="My Portofolio">
+                        Lihat proyek saya di GitHub
+                    </a>
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="message">
+            <h4 id="message">Message Me</h4>
+            <form>
+                <label>Nama</label>
+                <input type="text" id="name" name="name" placeholder="Tulis nama Anda disini.">
+                <br>
+                <label>Tanggal Lahir</label>
+                <input type="datetime-local" id="dob" name="dob" placeholder="Pastikan tidak melebihi tanggal hari ini.">
+                <br>
+                <label>Jenis Kelamin</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="male">Perempuan</label>
+                </div>
+                <br>
+                <div class="pesan">
+                    <label>Pesan</label>
+                    <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini..."></textarea>
+                    <br>
+                </div>                
+                <button>Send</button>
+            </form>
+        </div>
+        </section>
     </main>
     <footer>
-
+        <h5>Designed by Brian Casey Reynard</h5>        
     </footer>
     <script src="js/script.js"></script>
 </body>

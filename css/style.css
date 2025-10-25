@@ -1,3 +1,236 @@
-.navbar{
-    background-color: azure;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #03153e;
+    padding: 10px 30px;
+    color: rgb(207, 216, 137);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    position: sticky;
+}
+
+.main-logo img {
+    height: 50px;
+}
+
+nav a {
+    color: rgb(249, 249, 22);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+    justify-content: flex-end;
+}
+
+nav a:hover {
+    color: #c1c100;
+}
+
+main {
+    padding: 30px;
+}
+
+.introduction {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+}
+
+.profile {
+    margin-top: 30px;
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.profile h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#profil{
+    scroll-margin-top: 100px;
+}
+
+#profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #9fe2f4;
+}
+
+#profile-table h1 {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#profile-table h3 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #754747;
+}
+
+#profile-table a{
+    text-decoration: none;
+    color:#754747;
+}
+
+#profile-table a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+#profile-table td {
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    vertical-align: middle;
+    text-align: left;
+}
+
+#profile-table td:first-child {
+    width: 30%;          
+    font-weight: bold;
+}
+
+#profile-table td:last-child {
+    text-align: center;
+    width: 70%;         
+    color: #5a4b4b;
+}
+
+.portofolio{
+    padding: 30px 10px;
+    margin-top: 30px auto;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.portofolio a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.portofolio a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.message {
+    background-color: #fafafa;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.message h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* jarak antar pilihan */
+    margin-top: 5px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+#pesan{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #20232a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #61dafb;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #20232a;
+    color: white;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 10px 0 0;
+    }
+
+    .message {
+        width: 90%;
+    }
+
+    #profile-table h1, #profile-table h3 {
+        font-size: 14px;
+    }
 }
